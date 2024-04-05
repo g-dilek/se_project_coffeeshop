@@ -5,6 +5,266 @@
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
+  background: #ffffff url(../images/background_header.svg) center no-repeat;
+  background-size: cover;
 }
 
-/* font-family: "Noto Serif", "Times New Roman", Times, serif, sans-serif; */
+.header {
+  padding: 30px 80px 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+}
+
+.header__logo {
+  position: relative;
+  top: -50px;
+  left: -50px;
+  width: 105px;
+  height: 39px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.nav__links {
+  display: flex;
+  column-gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.nav__link:hover {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__title {
+  max-width: 729px;
+  padding: 0;
+  margin: 183px 0 0 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.6px;
+}
+
+.header__description {
+  max-width: 683px;
+  padding: 0;
+  margin: 28px 0 0 0;
+  font-family: "Noto Serif", "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.header__span-accent {
+  display: block;
+  font-family: "Noto Serif", "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 60px;
+  line-height: 72px;
+  color: #2f80ed;
+}
+
+.header__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.header__paragraph {
+  font-weight: 500;
+  color: #838383;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__image {
+  position: absolute;
+  width: 646px;
+  height: 568px;
+  top: 124px;
+  right: 5px;
+}
+
+.recipes {
+  background: #0a2750 url(../images/background_recipes.svg) center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.recipes__title {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  margin: 100px 0 0 80px;
+  max-width: 580px;
+}
+
+.recipes__subtitle {
+  font-family: "Noto Serif", "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 24px 0 0 80px;
+  max-width: 438px;
+}
+
+.recipes__videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  max-height: 800px;
+  min-height: 720px;
+  margin: 0 0 215px 0;
+  padding: 0;
+  gap: 40px;
+}
+
+.recipes__videos__aeropress {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipes__videos__aeropress-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recipes__videos__french-press {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipes__videos__french-press-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recipes__iframe {
+  width: 480px;
+  height: 273px;
+  margin: 80px 0 0 0;
+}
+
+.recipes__video-caption {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* COLORS
+#ffffff (header background, contrast font color)
+#000000 (main font color)
+#2f80ed (accent, button)
+#838383 (input borders and placeholders)
+#6F6F6F (hours and address)
+#0A2750 (recipes background) */
+
+/* TEXT
+
+# Header
+
+## Section: Reservation
+
+**Title and description**
+
+Book a table
+
+**Form labels**
+
+Name _
+Number of guests _
+Date & time _
+Your email _
+
+Book a table
+
+I agree with the terms of use
+
+**Placeholders**
+
+Name Surname
+1-8
+email@email.com
+
+---
+
+## Section: Menu
+
+**Title and description**
+
+Menu
+
+We brew coffee from locally roasted, Fairtrade certified beans and use biodegradable cups. All teas from our collection are $2/cup.
+
+**Menu cards**
+
+Filter
+Regular (12 oz) $1
+Large (16 oz) $1.25
+XL (20 oz) $1.5
+Party-size (24 oz, decaf) $1.75
+Iced Coffee (16 oz) $1.25
+
+Espresso
+Macchiato $2.25
+Cortado $2.5
+Mocha $3
+Sunrise in the Bay Area (decaf) $10
+
+Baked Goods
+Almond Croissant $2
+Banana Bread $1.75
+Key Lime Pie $3
+Blue Velvet Cake $3.75
+Web Cookie $2
+Fresh Bug’uette $0.25
+
+---
+
+## Section: About the coffee shop
+
+About the coffee shop
+
+Our coffee shop is located in the Triple Peaks Library. It features 6 tables and free WiFi.
+
+Our main mission is keeping guests cozy and energized.
+
+Besides that, we try to reduce our environmental impact — so we don't sell single-use cups. But you can buy one of our reusable cups!
+
+---
+
+**Footer**
+
+Social media
+Facebook
+Instagram
+
+© 2023 Your name
+
+*/
