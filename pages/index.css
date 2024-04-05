@@ -143,23 +143,12 @@
   gap: 40px;
 }
 
-.recipes__videos__aeropress {
+.recipes__video-container {
   display: flex;
   flex-direction: column;
 }
 
-.recipes__videos__aeropress-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.recipes__videos__french-press {
-  display: flex;
-  flex-direction: column;
-}
-
-.recipes__videos__french-press-text {
+.recipes__caption-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
