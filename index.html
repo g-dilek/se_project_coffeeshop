@@ -111,7 +111,38 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="book-a-table"></section>
+        <section class="reservation" id="book-a-table">
+          <div class="reservation__form form">
+          <h2 class="reservation__title">Book a table</h2>
+          <label class="form__fieldset">
+            <div class="reservation__form-container">
+              <div class="form__row">
+                <label for="name" class="form__label">Name *</label>
+                <input type="text" id="name" placeholder="Name Surname" class="form__input" />
+              </div>
+              <div class="form__row">
+                <label class="form__label">Number of guests *</label>
+                <input type="text" id="guests" placeholder="1-8" class="form__input"/>
+              </div>
+              <div class="form__row">
+                <label class="form__label">Date & time *</label>
+                <input type="datetime-local" id="date-and-time" class="form__input"/>
+              </div>
+              <div class="form__row">
+                <label class="form__label">Your email *</label>
+                <input type="text" id="email" placeholder="email@email.com" class="form__input"/>
+                </label>
+              </div>
+            <button type="submit" class="form__button">Book a table</button>
+
+            <label class="form__checkbox">
+              <input type="checkbox" id="agree-to-terms" class="form__checkbox-hidden" /><span class="form__checkbox-visible"></span>   I agree with the
+              terms of use
+            </label>
+          </div>
+          </div>
+          </div>
+        </section>
         <section class="menu" id="menu"></section>
         <section class="about" id="contacts"></section>
       </main>
