@@ -1,385 +1,70 @@
-.page {
-  min-width: 1100px;
-  max-width: 1600px;
-  margin: 0 auto;
-  font-family: "Inter", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  background: #ffffff url(../images/background_header.svg) center no-repeat;
-  background-size: cover;
+@import url(../vendor/normalize.css);
+
+@import url(../blocks/header.css);
+@import url(../blocks/nav.css);
+@import url(../blocks/recipes.css);
+@import url(../blocks/reservation.css);
+@import url(../blocks/form.css);
+@import url(../blocks/menu.css);
+@import url(../blocks/card.css);
+@import url(../blocks/about.css);
+@import url(../blocks/page.css);
+@import url(../blocks/footer.css);
+
+.footer {
+  background: linear-gradient(180deg, #0a2850 0%, #071931 100%);
+  color: #fff;
 }
 
-.header {
-  padding: 30px 80px 40px;
+.footer__content {
   display: flex;
-  flex-direction: column;
-  min-height: 720px;
-  max-height: 800px;
-  height: 100vh;
+  justify-content: space-between;
+  justify-items: right;
+  padding: 60px 80px 108px 80px;
 }
 
-.header__logo {
-  position: relative;
-  top: -50px;
-  left: -50px;
+.footer__logo {
   width: 105px;
   height: 39px;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+.footer__social-heading {
+  padding: 0 0 20px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.nav__links {
-  display: flex;
-  column-gap: 20px;
+.footer__list {
   list-style-type: none;
+  text-align: right;
   padding: 0;
   margin: 0;
 }
 
-.nav__link {
-  color: #000;
+.footer__list-item {
+  padding-bottom: 16px;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  padding-right: 10px;
+}
+
+.footer__social-link {
+  color: white;
   text-decoration: none;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.nav__link:hover {
-  color: #2f80ed;
-  text-decoration: none;
-}
-
-.header__title {
-  max-width: 729px;
-  padding: 0;
-  margin: 183px 0 0 0;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 72px;
-  letter-spacing: -0.6px;
-}
-
-.header__description {
-  max-width: 683px;
-  padding: 0;
-  margin: 28px 0 0 0;
-  font-family: "Noto Serif", "Times New Roman", Times, serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.header__span-accent {
-  display: block;
-  font-family: "Noto Serif", "Times New Roman", Times, serif;
-  font-style: italic;
-  font-size: 60px;
-  line-height: 72px;
-  color: #2f80ed;
-}
-
-.header__footer {
+  transition: color 0.5s;
   display: flex;
-  justify-content: space-between;
-  margin-top: auto;
-}
-
-.header__paragraph {
-  font-weight: 500;
-  color: #838383;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header__image {
-  position: absolute;
-  width: 646px;
-  height: 568px;
-  top: 124px;
-  right: 5px;
-}
-
-.recipes {
-  background: #0a2750 url(../images/background_recipes.svg) center no-repeat;
-  background-size: cover;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-}
-
-.recipes__title {
-  font-weight: 500;
-  font-size: 44px;
-  line-height: 52px;
-  margin: 100px 0 0 80px;
-  max-width: 580px;
-}
-
-.recipes__subtitle {
-  font-family: "Noto Serif", "Times New Roman", Times, serif;
-  font-size: 20px;
-  line-height: 30px;
-  margin: 24px 0 0 80px;
-  max-width: 438px;
-}
-
-.recipes__videos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 100vh;
-  max-height: 800px;
-  min-height: 720px;
-  margin: 0 0 215px 0;
-  padding: 0;
-  gap: 40px;
-}
-
-.recipes__video-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.recipes__caption-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.recipes__iframe {
-  width: 480px;
-  height: 273px;
-  margin: 80px 0 0 0;
-}
-
-.recipes__video-caption {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.reservation {
-  background: #d9e7ff url(../images/background_reservation.svg) center no-repeat;
-  background-size: cover;
-  margin: auto 0;
-  padding: 0;
-}
-
-.reservation__form {
-  margin: 0;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-.reservation__title {
-  font-weight: 500;
-  font-size: 44px;
-  line-height: 52px;
-  margin: 100px 0 80px 0;
+.footer__social-link:hover {
+  color: #c1c1c1;
 }
 
-.form__fieldset {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
+.footer__copyright {
+  padding: 0 0 60px 80px;
 }
-
-.form__row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.form__input {
-  font-weight: 500;
-  margin: 0 0 32px 0;
-  border-radius: 4px;
-  align-self: flex-start;
-  max-width: 385px;
-  height: 60px;
-  font-size: 20px;
-  line-height: 30px;
-  color: #838383;
-}
-
-.form__label {
-  align-self: flex-start;
-  font-weight: 500;
-  margin: 0 0 8px 0;
-  border-radius: 4px;
-}
-
-.form__button {
-  border-radius: 4px;
-  font-weight: 500;
-  margin: 0 0 32px;
-  transition: opacity 0.15s ease-in-out;
-  height: 60px;
-  color: #ffffff;
-  background-color: #2f80ed;
-  border: 0;
-  width: 285px;
-}
-
-.form__button:hover {
-  opacity: 70%;
-}
-
-.form__checkbox {
-  display: block;
-  position: relative;
-  margin-bottom: 120px;
-  cursor: pointer;
-  font-weight: 500;
-  margin-top: 20px;
-  text-align: center;
-  padding-left: 35px;
-  border-radius: 2px;
-}
-
-input[type="checkbox"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.form__checkbox input:checked ~ .form__checkbox-visible {
-  position: absolute;
-  top: -2px;
-  left: 0px;
-  height: 25px;
-  width: 25px;
-  background: #2f80ed url(../images/check.svg) no-repeat center;
-}
-
-input[type="checkbox"] + span {
-  position: absolute;
-  top: -2px;
-  left: 0px;
-  height: 25px;
-  width: 25px;
-  background-color: #2f80ed;
-  border-radius: 50%;
-}
-
-/* You can keep the standard checked styles for it. But if you want to challenge
-yourself, you can style it as follows: set the background color to #2F80ED, and a
-background image of check.svg. If you keep the default styles, make sure to
-remove check.svg from the images directory. */
-
-/* Remember that according to BEM, we can’t modify the
-“external geometry” of a block. This means that if we want to
-adjust a BEM block’s margins, or its position on the page, we
-have to “mix” it with a BEM element. Refer back to our lesson
-on mixes in Sprint 1 for details. */
-
-/* COLORS
-#ffffff (header background, contrast font color)
-#000000 (main font color)
-#2f80ed (accent, button)
-#838383 (input borders and placeholders)
-#6F6F6F (hours and address)
-#0A2750 (recipes background) */
-
-/* TEXT
-
-# Header
-
-## Section: Reservation
-
-**Title and description**
-
-Book a table
-
-**Form labels**
-
-Name _
-Number of guests _
-Date & time _
-Your email _
-
-Book a table
-
-I agree with the terms of use
-
-**Placeholders**
-
-Name Surname
-1-8
-email@email.com
-
----
-
-## Section: Menu
-
-**Title and description**
-
-Menu
-
-We brew coffee from locally roasted, Fairtrade certified beans and use biodegradable cups. All teas from our collection are $2/cup.
-
-**Menu cards**
-
-Filter
-Regular (12 oz) $1
-Large (16 oz) $1.25
-XL (20 oz) $1.5
-Party-size (24 oz, decaf) $1.75
-Iced Coffee (16 oz) $1.25
-
-Espresso
-Macchiato $2.25
-Cortado $2.5
-Mocha $3
-Sunrise in the Bay Area (decaf) $10
-
-Baked Goods
-Almond Croissant $2
-Banana Bread $1.75
-Key Lime Pie $3
-Blue Velvet Cake $3.75
-Web Cookie $2
-Fresh Bug’uette $0.25
-
----
-
-## Section: About the coffee shop
-
-About the coffee shop
-
-Our coffee shop is located in the Triple Peaks Library. It features 6 tables and free WiFi.
-
-Our main mission is keeping guests cozy and energized.
-
-Besides that, we try to reduce our environmental impact — so we don't sell single-use cups. But you can buy one of our reusable cups!
-
----
-
-**Footer**
-
-Social media
-Facebook
-Instagram
-
-© 2023 Your name
-
-*/

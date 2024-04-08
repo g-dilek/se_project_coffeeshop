@@ -1,0 +1,11 @@
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  background: #ffffff url(../images/background_header.svg) center no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}

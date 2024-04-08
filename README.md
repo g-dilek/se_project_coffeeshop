@@ -11,6 +11,8 @@ This is the second project of the Software Engineering program at TripleTen. It 
 - A custom form
 - CSS animation and transform
 
-## Plan on improving the project
+## Plans on improving the project
 
-Use Sass formatting in addition to BEM naming convention to help CSS readability.
+- Use Sass formatting in addition to BEM naming convention to help CSS readability
+- Online ordering system
+- Nutrition information, allergens
