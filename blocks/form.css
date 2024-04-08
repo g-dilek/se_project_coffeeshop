@@ -8,19 +8,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: left;
-}
-
-.form__row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  border: none;
 }
 
 .form__input {
+  display: block;
   font-weight: 500;
   margin: 0 0 32px 0;
+  border: 1px solid #838383;
   border-radius: 4px;
   align-self: flex-start;
   max-width: 385px;
@@ -34,7 +29,6 @@
   align-self: flex-start;
   font-weight: 500;
   margin: 0 0 8px 0;
-  border-radius: 4px;
 }
 
 .form__button {
@@ -66,7 +60,7 @@
 }
 
 /* Hide default checkbox */
-input[type="checkbox"] {
+.form__checkbox-hidden {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -78,7 +72,7 @@ input[type="checkbox"] {
 }
 
 /* New checkbox - checked */
-.form__checkbox input:checked ~ .form__checkbox-visible {
+.form__checkbox-hidden:checked ~ .form__checkbox-visible {
   position: absolute;
   top: -2px;
   left: 0px;
@@ -88,7 +82,7 @@ input[type="checkbox"] {
 }
 
 /* New checkbox - unchecked */
-input[type="checkbox"] + span {
+.form__checkbox-visible {
   position: absolute;
   top: -2px;
   left: 0px;

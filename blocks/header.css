@@ -5,14 +5,8 @@
   min-height: 720px;
   max-height: 800px;
   height: 100vh;
-}
-
-.header__logo {
-  position: relative;
-  top: -50px;
-  left: -50px;
-  width: 105px;
-  height: 39px;
+  background: url(../images/background_header.svg) center no-repeat;
+  background-size: cover;
 }
 
 .header__title {

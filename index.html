@@ -25,7 +25,7 @@
       <header class="header">
         <nav class="nav">
           <img
-            src="../images/logo_coffeeshop_dark.svg"
+            src="./images/logo_coffeeshop_dark.svg"
             alt="Triple Peaks Coffee Shop Logo"
             class="nav__logo"
           />
@@ -65,9 +65,9 @@
             <p class="header__paragraph">Saturday - Sunday (11:00 - 18:00)</p>
           </div>
           <div>
-            <div class="header__paragraph">
+            <p class="header__paragraph">
               200 Success Avenue, The Town of Triple Peaks
-            </div>
+            </p>
           </div>
         </div>
       </header>
@@ -110,45 +110,47 @@
           </div>
         </section>
         <section class="reservation" id="book-a-table">
+          <h2 class="reservation__title">Book a table</h2>
           <form class="reservation__form form">
-            <h2 class="reservation__title">Book a table</h2>
-
-            <div class="form__fieldset">
-              <div class="form__row">
-                <label for="name" class="form__label">Name *</label>
+            <fieldset class="form__fieldset">
+              <label for="name" class="form__label"
+                >Name *
                 <input
                   type="text"
                   id="name"
                   placeholder="Name Surname"
                   class="form__input"
                 />
-              </div>
-              <div class="form__row">
-                <label class="form__label">Number of guests *</label>
+              </label>
+
+              <label class="form__label"
+                >Number of guests *
                 <input
                   type="text"
                   id="guests"
                   placeholder="1-8"
                   class="form__input"
                 />
-              </div>
-              <div class="form__row">
-                <label class="form__label">Date & time *</label>
+              </label>
+
+              <label class="form__label"
+                >Date & time *
                 <input
                   type="datetime-local"
                   id="date-and-time"
                   class="form__input"
                 />
-              </div>
-              <div class="form__row">
-                <label class="form__label">Your email *</label>
+              </label>
+
+              <label class="form__label"
+                >Your email *
                 <input
                   type="text"
                   id="email"
                   placeholder="email@email.com"
                   class="form__input"
                 />
-              </div>
+              </label>
               <button type="submit" class="form__button">Book a table</button>
 
               <label class="form__checkbox">
@@ -159,7 +161,7 @@
                 /><span class="form__checkbox-visible"></span> I agree with the
                 terms of use
               </label>
-            </div>
+            </fieldset>
           </form>
         </section>
 
@@ -241,7 +243,7 @@
 
         <section class="about" id="contacts">
           <div class="about__circle"></div>
-          <div class="about__circle_animation_blurred"></div>
+          <div class="about__circle about__circle_animation_blurred"></div>
           <h2 class="about__title">About the coffee shop</h2>
           <div class="about__content">
             <p class="about__paragraph">
@@ -262,33 +264,33 @@
       <footer class="footer">
         <div class="footer__content">
           <img
-            src="../images/logo_coffeeshop_light.svg"
+            src="./images/logo_coffeeshop_light.svg"
             alt="Triple Peaks Coffee Shop Logo"
             class="footer__logo"
           />
-          <ul class="footer__list">
-            <li class="footer__list-item">
-              <h3 class="footer__social-heading">Social media</h3>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__social-link">
-                <img
-                  src="../images/facebook_white.svg"
-                  alt="Facebook logo"
-                  class="footer__social-icon"
-                />Facebook</a
-              >
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__social-link">
-                <img
-                  src="../images/instagram_white.svg"
-                  alt="Instagram logo"
-                  class="footer__social-icon"
-                />Instagram</a
-              >
-            </li>
-          </ul>
+          <div class="footer__list-container">
+            <h3 class="footer__social-heading">Social media</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    src="./images/facebook_white.svg"
+                    alt="Facebook logo"
+                    class="footer__social-icon"
+                  />Facebook</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    src="./images/instagram_white.svg"
+                    alt="Instagram logo"
+                    class="footer__social-icon"
+                  />Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
         <p class="footer__copyright">© 2023 Grace Persion</p>
       </footer>
