@@ -29,12 +29,16 @@
   font-size: 20px;
   line-height: 30px;
   color: #838383;
+  align-items: stretch;
+  width: 385px;
 }
 
 .form__label {
-  align-self: flex-start;
+  align-self: center;
   font-weight: 500;
   margin: 0;
+  width: 385px;
+  align-items: stretch;
 }
 
 .form__button {
@@ -46,7 +50,8 @@
   color: #ffffff;
   background-color: #2f80ed;
   border: 0;
-  width: 285px;
+  width: 385px;
+  align-self: center;
 }
 
 .form__button:hover {
@@ -54,15 +59,14 @@
 }
 
 .form__checkbox {
-  display: block;
-  position: relative;
+  display: flex;
+  align-self: center;
   margin-bottom: 120px;
   cursor: pointer;
   font-weight: 500;
   margin-top: 32px;
-  text-align: center;
-  padding-left: 35px;
-  border-radius: 2px;
+  padding: 0px;
+  gap: 12px;
 }
 
 /* Hide default checkbox */
@@ -79,21 +83,21 @@
 
 /* New checkbox - checked */
 .form__checkbox-hidden:checked ~ .form__checkbox-visible {
-  position: absolute;
-  top: -2px;
-  left: 0px;
-  height: 25px;
-  width: 25px;
+  display: flex;
+  height: 20px;
+  width: 20px;
   background: #2f80ed url(../images/check.svg) no-repeat center;
 }
 
 /* New checkbox - unchecked */
 .form__checkbox-visible {
-  position: absolute;
-  top: -2px;
-  left: 0px;
-  height: 25px;
-  width: 25px;
+  display: flex;
+  height: 20px;
+  width: 20px;
   background-color: #2f80ed;
   border-radius: 2px;
+}
+
+.form__text {
+  font-weight: 500;
 }
