@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  flex-wrap: wrap;
   border: none;
   width: 385px;
   padding: 0;
