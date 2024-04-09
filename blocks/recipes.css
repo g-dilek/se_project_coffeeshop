@@ -4,7 +4,7 @@
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 0;
+  padding: 0 0 215px 0;
   margin: 0;
 }
 
@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 0 0 215px 0;
+
   margin: 0;
   gap: 40px;
 }
@@ -47,7 +47,7 @@
 .recipes__iframe {
   width: 480px;
   height: 273px;
-  margin: 80px 0 0 0;
+  margin: 80px 0 24px 0;
   border: 0;
 }
 

@@ -17,6 +17,8 @@
   display: flex;
   column-gap: 20px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav__link {
@@ -24,6 +26,7 @@
   text-decoration: none;
   font-weight: 500;
   font-style: normal;
+  transition: color 0.5s;
 }
 
 .nav__link:hover {
